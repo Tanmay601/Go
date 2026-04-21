@@ -29,6 +29,6 @@ func main() {
 	fmt.Println(website)
 
 	//no var type
-	numberOfUser := 3000000
+	numberOfUser := 3000000 //used heavily in golang work on this
 	fmt.Println(numberOfUser)
 }
