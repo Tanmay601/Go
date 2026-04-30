@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Slices") //slices are arrays that can grow and shrink dynamically in go
+	// fmt.Println("Slices") //slices are arrays that can grow and shrink dynamically in go
 
 	var fruitList = []string{"apple", "orange"}
-	fmt.Printf(" Type of Fruit list is %T\n", fruitList)
+	// fmt.Printf(" Type of Fruit list is %T\n", fruitList)
 
 	fruitList = append(fruitList, "Mango", "Banana")
-	fmt.Println(fruitList)
+	//fmt.Println(fruitList)
 
 	fruitList = append(fruitList[1:]) //slices the slice
-	fmt.Println(fruitList)
+	//fmt.Println(fruitList)
 
 	highScore := make([]int, 4) //make is used for memory allocation
 
@@ -21,6 +21,14 @@ func main() {
 	highScore[2] = 565
 	highScore[3] = 12
 
-	fmt.Println(highScore)
+	// fmt.Println(highScore)
 
+	//how to remove value from slice based on index
+
+	var courses = []string{"reactjs", "vuejs", "nodejs", "swift"}
+	fmt.Println(courses)
+
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println(courses)
 }
