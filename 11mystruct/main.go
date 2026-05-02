@@ -19,3 +19,16 @@ type user struct {
 	Status bool
 	Age    int
 }
+
+// GetStatus is a 'Value Receiver'
+// It creates a COPY of the struct. Good for reading data.
+func (u user) GetStatus() {
+	fmt.Println("Is user active?:", u.Status)
+}
+
+// NewMail is a 'Pointer Receiver'
+// It passes the actual ADDRESS of the struct.
+// Without the '*', the email would only change inside this function, not in main.
+func (u *user) NewMail(newMail string) {
+	u.email = newMail
+}
