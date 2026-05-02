@@ -14,4 +14,11 @@ func main() {
 	fmt.Println("List of all languages:", languages)
 	fmt.Println("JS full form is:", languages["JS"])
 
+	//looops are unique in go
+
+	for key, value := range languages {
+
+		fmt.Println("For key", key, "value is", value)
+	}
+
 }
