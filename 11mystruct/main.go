@@ -11,4 +11,8 @@ func main() {
 }
 
 type user struct {
+	name   string
+	email  string
+	Status bool
+	Age    int
 }
