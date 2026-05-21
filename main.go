@@ -3,13 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello SAP")
-}
 
-func add(num1 int, num2 int) int {
-	return num1 + num2
-}
+	var choice int
 
-func subtract(num1 int, num2 int) int {
-	return num1 - num2
+	fmt.Println("1. Add")
+	fmt.Println("2. Subtract")
+	fmt.Print("Enter choice: ")
+
+	fmt.Scanln(&choice)
+
+	switch choice {
+
+	case 1:
+		fmt.Println("Addition Selected")
+
+	case 2:
+		fmt.Println("Subtraction Selected")
+
+	default:
+		fmt.Println("Wrong Choice")
+	}
 }
