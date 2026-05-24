@@ -2,20 +2,25 @@ package main
 
 import "fmt"
 
-func add(a int, b int) {
-	fmt.Println("Sum =", a+b)
-}
+func grade(marks int) {
 
-func checkEven(num int) {
+	switch {
 
-	if num%2 == 0 {
-		fmt.Println("Even Number")
-	} else {
-		fmt.Println("Odd Number")
+	case marks >= 90:
+		fmt.Println("Grade A")
+
+	case marks >= 75:
+		fmt.Println("Grade B")
+
+	case marks >= 50:
+		fmt.Println("Grade C")
+
+	default:
+		fmt.Println("Fail")
 	}
 }
 
 func main() {
 
-	checkEven(7)
+	grade(82)
 }
