@@ -34,4 +34,6 @@ func main() {
 
 	fmt.Println("Header is:", response.Header)
 
+	fmt.Println("Header is:", response.Header.Get("Content-Type"))
+
 }
