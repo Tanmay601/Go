@@ -32,4 +32,6 @@ func main() {
 
 	fmt.Println("Status code is:", response.StatusCode)
 
+	fmt.Println("Header is:", response.Header)
+
 }
