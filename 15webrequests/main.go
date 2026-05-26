@@ -29,4 +29,7 @@ func main() {
 
 	content := string(databytes)
 	fmt.Println("Content:", content)
+
+	fmt.Println("Status code is:", response.StatusCode)
+
 }
