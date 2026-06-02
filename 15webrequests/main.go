@@ -44,4 +44,8 @@ func main() {
 
 	fmt.Println("Header is:", response.Header.Get("Content-Location"))
 
+	fmt.Println("Header is:", response.Header.Get("Content-Disposition"))
+
+	fmt.Println("Header is:", response.Header.Get("Content-Transfer-Encoding"))
+
 }
