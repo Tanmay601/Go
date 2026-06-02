@@ -40,4 +40,8 @@ func main() {
 
 	fmt.Println("Header is:", response.Header.Get("Content-Encoding"))
 
+	fmt.Println("Header is:", response.Header.Get("Content-Language"))
+
+	fmt.Println("Header is:", response.Header.Get("Content-Location"))
+
 }
