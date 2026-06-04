@@ -52,4 +52,8 @@ func main() {
 
 	fmt.Println("Header is:", response.Header.Get("Content-Description"))
 
+	fmt.Println("Header is:", response.Header.Get("Content-Base"))
+
+	fmt.Println("Header is:", response.Header.Get("Content-MD5"))
+
 }
