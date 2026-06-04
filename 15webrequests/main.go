@@ -48,4 +48,8 @@ func main() {
 
 	fmt.Println("Header is:", response.Header.Get("Content-Transfer-Encoding"))
 
+	fmt.Println("Header is:", response.Header.Get("Content-Range"))
+
+	fmt.Println("Header is:", response.Header.Get("Content-Description"))
+
 }
