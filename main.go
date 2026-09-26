@@ -1,5 +1,6 @@
 package main
 
+<<<<<<< HEAD
 import (
 	"fmt"
 	"log"
@@ -25,4 +26,29 @@ func greeter() {
 
 func serveHome(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("<h1>Welcome to Tanmay Page</h1>"))
+=======
+import "fmt"
+
+func main() {
+
+	var choice int
+
+	fmt.Println("1. Add")
+	fmt.Println("2. Subtract")
+	fmt.Print("Enter choice: ")
+
+	fmt.Scanln(&choice)
+
+	switch choice {
+
+	case 1:
+		fmt.Println("Addition Selected")
+
+	case 2:
+		fmt.Println("Subtraction Selected")
+
+	default:
+		fmt.Println("Wrong Choice")
+	}
+>>>>>>> 3cc9b20b8d088f8ceb451483cc42036cac0b4d1c
 }
