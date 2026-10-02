@@ -1,27 +1,11 @@
 package model
-package main
 
 import (
-	"context"
-	"fmt"
-	"log"
-
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-func main() {
-	uri := "mongodb://localhost:27017"
-
-	client, err := mongo.Connect(context.TODO(), options.Client().ApplyURI(uri))
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	err = client.Ping(context.TODO(), nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	fmt.Println("MongoDB connected successfully!")
-} 
+type Netflix struct {
+	ID      primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
+	Movie   string             `json:"movie,omitempty" bson:"movie,omitempty"`
+	Watched bool               `json:"watched,omitempty" bson:"watched,omitempty"`
+}
