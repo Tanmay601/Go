@@ -12,6 +12,7 @@ func main() {
 	fmt.Println("MongoDB API")
 	r := router.Router()
 	fmt.Println("Starting the application...")
-	log.Fatal(http.ListenAndServe(":8000", r))
-	fmt.Println("Server started at port 8000")
+	http.ListenAndServe(":4000", r)
+	log.Fatal(http.ListenAndServe(":4000", r))
+	fmt.Println("Server started at port 4000")
 }
